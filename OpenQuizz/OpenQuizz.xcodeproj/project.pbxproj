@@ -13,6 +13,8 @@
 		B15275FE22B283E200955C9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15275FD22B283E200955C9C /* Assets.xcassets */; };
 		B152760122B283E200955C9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15275FF22B283E200955C9C /* LaunchScreen.storyboard */; };
 		B152760922B2875600955C9C /* Balham.otf in Resources */ = {isa = PBXBuildFile; fileRef = B152760822B2875600955C9C /* Balham.otf */; };
+		B152760F22B2B07A00955C9C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B152760E22B2B07A00955C9C /* Question.swift */; };
+		B152761122B3011A00955C9C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = B152761022B3011A00955C9C /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B152760022B283E200955C9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B152760222B283E200955C9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B152760822B2875600955C9C /* Balham.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Balham.otf; sourceTree = "<group>"; };
+		B152760E22B2B07A00955C9C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		B152761022B3011A00955C9C /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 		B152760A22B2926400955C9C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B152761022B3011A00955C9C /* Game.swift */,
+				B152760E22B2B07A00955C9C /* Question.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,8 +177,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B152760F22B2B07A00955C9C /* Question.swift in Sources */,
 				B15275F922B283E100955C9C /* ViewController.swift in Sources */,
 				B15275F722B283E100955C9C /* AppDelegate.swift in Sources */,
+				B152761122B3011A00955C9C /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
