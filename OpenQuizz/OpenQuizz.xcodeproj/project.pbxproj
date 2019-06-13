@@ -23,7 +23,7 @@
 		B15275FD22B283E200955C9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B152760022B283E200955C9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B152760222B283E200955C9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B152760822B2875600955C9C /* Balham.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Balham.otf; path = ../../Balham.otf; sourceTree = "<group>"; };
+		B152760822B2875600955C9C /* Balham.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Balham.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,47 @@
 		B15275F522B283E100955C9C /* OpenQuizz */ = {
 			isa = PBXGroup;
 			children = (
-				B15275F622B283E100955C9C /* AppDelegate.swift */,
-				B15275F822B283E100955C9C /* ViewController.swift */,
+				B152760D22B292AE00955C9C /* Supporting Files */,
+				B152760C22B2927A00955C9C /* Controller */,
+				B152760B22B2927500955C9C /* View */,
+				B152760A22B2926400955C9C /* Model */,
+			);
+			path = OpenQuizz;
+			sourceTree = "<group>";
+		};
+		B152760A22B2926400955C9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B152760B22B2927500955C9C /* View */ = {
+			isa = PBXGroup;
+			children = (
 				B15275FA22B283E100955C9C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B152760C22B2927A00955C9C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B15275F822B283E100955C9C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B152760D22B292AE00955C9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				B152760822B2875600955C9C /* Balham.otf */,
 				B15275FD22B283E200955C9C /* Assets.xcassets */,
 				B15275FF22B283E200955C9C /* LaunchScreen.storyboard */,
 				B152760222B283E200955C9C /* Info.plist */,
+				B15275F622B283E100955C9C /* AppDelegate.swift */,
 			);
-			path = OpenQuizz;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
