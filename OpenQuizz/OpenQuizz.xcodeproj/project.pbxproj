@@ -12,6 +12,7 @@
 		B15275FC22B283E100955C9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15275FA22B283E100955C9C /* Main.storyboard */; };
 		B15275FE22B283E200955C9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15275FD22B283E200955C9C /* Assets.xcassets */; };
 		B152760122B283E200955C9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15275FF22B283E200955C9C /* LaunchScreen.storyboard */; };
+		B152760922B2875600955C9C /* Balham.otf in Resources */ = {isa = PBXBuildFile; fileRef = B152760822B2875600955C9C /* Balham.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B15275FD22B283E200955C9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B152760022B283E200955C9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B152760222B283E200955C9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B152760822B2875600955C9C /* Balham.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Balham.otf; path = ../../Balham.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				B15275F622B283E100955C9C /* AppDelegate.swift */,
 				B15275F822B283E100955C9C /* ViewController.swift */,
 				B15275FA22B283E100955C9C /* Main.storyboard */,
+				B152760822B2875600955C9C /* Balham.otf */,
 				B15275FD22B283E200955C9C /* Assets.xcassets */,
 				B15275FF22B283E200955C9C /* LaunchScreen.storyboard */,
 				B152760222B283E200955C9C /* Info.plist */,
@@ -124,6 +127,7 @@
 			files = (
 				B152760122B283E200955C9C /* LaunchScreen.storyboard in Resources */,
 				B15275FE22B283E200955C9C /* Assets.xcassets in Resources */,
+				B152760922B2875600955C9C /* Balham.otf in Resources */,
 				B15275FC22B283E100955C9C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
