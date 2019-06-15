@@ -29,6 +29,13 @@ class Game {
         score = 0
         currentIndex = 0
         state = .over
+        QuestionManager.shared.get(completionHandler: receiveQuestions(_:))
+    }
+    
+    private func receiveQuestions(_ questions: [Question]) {
+        self.questions = questions
+        print(questions)
+        state = .over
     }
 
     func answerCurrentQuestion(with answer: Bool) {
