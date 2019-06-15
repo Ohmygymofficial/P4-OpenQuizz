@@ -62,6 +62,7 @@
 		B15275F522B283E100955C9C /* OpenQuizz */ = {
 			isa = PBXGroup;
 			children = (
+				B152760222B283E200955C9C /* Info.plist */,
 				B152760D22B292AE00955C9C /* Supporting Files */,
 				B152760C22B2927A00955C9C /* Controller */,
 				B152760B22B2927500955C9C /* View */,
@@ -102,7 +103,6 @@
 				B152760822B2875600955C9C /* Balham.otf */,
 				B15275FD22B283E200955C9C /* Assets.xcassets */,
 				B15275FF22B283E200955C9C /* LaunchScreen.storyboard */,
-				B152760222B283E200955C9C /* Info.plist */,
 				B15275F622B283E100955C9C /* AppDelegate.swift */,
 			);
 			path = "Supporting Files";
