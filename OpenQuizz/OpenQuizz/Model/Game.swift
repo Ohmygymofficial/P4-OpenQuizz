@@ -29,14 +29,17 @@ class Game {
         score = 0
         currentIndex = 0
         state = .over
-        QuestionManager.shared.get(completionHandler: receiveQuestions(_:))
+        QuestionManager.shared.get { (questions) in
+            self.questions = questions
+            self.state = .ongoing
+            
+            let name = Notification.Name(rawValue: "QuestionsLoaded")
+            let notification = Notification(name: name)
+            NotificationCenter.default.post(notification)
+        }
     }
     
-    private func receiveQuestions(_ questions: [Question]) {
-        self.questions = questions
-        print(questions)
-        state = .over
-    }
+
 
     func answerCurrentQuestion(with answer: Bool) {
         if (currentQuestion.isCorrect && answer) || (!currentQuestion.isCorrect && !answer) {
