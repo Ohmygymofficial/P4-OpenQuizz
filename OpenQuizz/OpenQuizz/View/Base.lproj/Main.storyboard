@@ -23,6 +23,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pzf-Dv-aKa" customClass="QuestionView" customModule="OpenQuizz" customModuleProvider="target">
+                                <rect key="frame" x="84.666666666666686" y="36" width="245" height="245"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Icon Correct" translatesAutoresizingMaskIntoConstraints="NO" id="yha-oc-qcu">
+                                        <rect key="frame" x="102.33333333333333" y="189" width="39.999999999999986" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="KVe-g2-L8V"/>
+                                            <constraint firstAttribute="height" constant="40" id="cmZ-b7-AxF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ved-us-Y7m">
+                                        <rect key="frame" x="0.0" y="16" width="245" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="uxV-xs-s9k"/>
+                                        </constraints>
+                                        <string key="text">Blabla salut ca va  je vais bien merci on va bien cest cojdlkfjdlkvjld fjvldfjvlk dj vlkadjfvl ajdvlk ajdflkvjadflk jv ladfjvlakd jvlkaj vlkaj vlkjac vlkaj ldkv</string>
+                                        <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.72156862749999995" green="0.73725490199999999" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ved-us-Y7m" secondAttribute="trailing" id="6Z0-1u-ln1"/>
+                                    <constraint firstAttribute="bottom" secondItem="yha-oc-qcu" secondAttribute="bottom" constant="16" id="RgS-sa-Uxv"/>
+                                    <constraint firstItem="yha-oc-qcu" firstAttribute="centerX" secondItem="pzf-Dv-aKa" secondAttribute="centerX" id="TOD-ep-08L"/>
+                                    <constraint firstAttribute="height" constant="245.00000000000006" id="aSW-ML-dBF"/>
+                                    <constraint firstAttribute="width" constant="245.00000000000009" id="bkT-cc-xxb"/>
+                                    <constraint firstItem="ved-us-Y7m" firstAttribute="leading" secondItem="pzf-Dv-aKa" secondAttribute="leading" id="gTa-Jt-PKW"/>
+                                    <constraint firstItem="ved-us-Y7m" firstAttribute="top" secondItem="pzf-Dv-aKa" secondAttribute="top" constant="16" id="jYX-cU-7la"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="icon" destination="yha-oc-qcu" id="UvC-u6-UB9"/>
+                                    <outlet property="label" destination="ved-us-Y7m" id="skZ-hy-eJy"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jil-8c-yc3">
+                                <rect key="frame" x="16" y="301" width="382" height="29.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3R4-75-ush">
                                 <rect key="frame" x="107" y="636" width="200" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -35,41 +77,19 @@
                                     <action selector="didTapNewGameButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="eDv-8U-z3c"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0/10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jil-8c-yc3">
-                                <rect key="frame" x="56.670462178298294" y="273" width="300.00000000000011" height="59.999999999999964"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pzf-Dv-aKa" customClass="QuestionView" customModule="OpenQuizz" customModuleProvider="target">
-                                <rect key="frame" x="83.488642251830129" y="20" width="245.00000000000009" height="245.00000000000006"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ved-us-Y7m">
-                                        <rect key="frame" x="101" y="112" width="56" height="23"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="23"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Icon Correct" translatesAutoresizingMaskIntoConstraints="NO" id="yha-oc-qcu">
-                                        <rect key="frame" x="103.92044778493198" y="183" width="35.999999999999972" height="34.999999999999957"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.72156862749999995" green="0.73725490199999999" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="icon" destination="yha-oc-qcu" id="UvC-u6-UB9"/>
-                                    <outlet property="label" destination="ved-us-Y7m" id="skZ-hy-eJy"/>
-                                </connections>
-                            </view>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="1ha-3G-Vmd">
                                 <rect key="frame" x="189" y="658" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.35686274509803922" green="0.41960784313725491" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jil-8c-yc3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9LW-f4-Rps"/>
+                            <constraint firstItem="pzf-Dv-aKa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="M3T-xI-xv0"/>
+                            <constraint firstItem="jil-8c-yc3" firstAttribute="top" secondItem="pzf-Dv-aKa" secondAttribute="bottom" constant="20" id="UKi-DF-Cha"/>
+                            <constraint firstItem="pzf-Dv-aKa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VQP-Vc-3Ux"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jil-8c-yc3" secondAttribute="trailing" constant="16" id="slv-x6-hvJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
