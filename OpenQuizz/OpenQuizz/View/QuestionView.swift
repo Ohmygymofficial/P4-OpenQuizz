@@ -30,7 +30,7 @@ class QuestionView: UIView {
             icon.image = UIImage(named: "Icon Correct")
             isHidden = false
         case .incorrect:
-            backgroundColor = #colorLiteral(red: 0.8980392157, green: 0.5529411765, blue: 0.5843137255, alpha: 1)
+            backgroundColor = #colorLiteral(red: 0.374232173, green: 0.8378459215, blue: 0, alpha: 1)
             icon.image = UIImage(named: "Icon Error")
             isHidden = false
         case .standard:
