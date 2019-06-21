@@ -43,7 +43,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pzf-Dv-aKa">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pzf-Dv-aKa" customClass="QuestionView" customModule="OpenQuizz" customModuleProvider="target">
                                 <rect key="frame" x="83.488642251830129" y="20" width="245.00000000000009" height="245.00000000000006"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -55,11 +55,15 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Icon Correct" translatesAutoresizingMaskIntoConstraints="NO" id="yha-oc-qcu">
-                                        <rect key="frame" x="104" y="183" width="36" height="35"/>
+                                        <rect key="frame" x="103.92044778493198" y="183" width="35.999999999999972" height="34.999999999999957"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.72156862749999995" green="0.73725490199999999" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="icon" destination="yha-oc-qcu" id="UvC-u6-UB9"/>
+                                    <outlet property="label" destination="ved-us-Y7m" id="skZ-hy-eJy"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.35686274509803922" green="0.41960784313725491" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
