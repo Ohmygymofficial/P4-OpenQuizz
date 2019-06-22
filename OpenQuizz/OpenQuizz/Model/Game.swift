@@ -29,6 +29,7 @@ class Game {
         score = 0
         currentIndex = 0
         state = .over
+        
         QuestionManager.shared.get { (questions) in
             self.questions = questions
             self.state = .ongoing

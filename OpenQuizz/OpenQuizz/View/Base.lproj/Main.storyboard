@@ -65,10 +65,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3R4-75-ush">
-                                <rect key="frame" x="107" y="636" width="200" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3R4-75-ush">
+                                <rect key="frame" x="152" y="636" width="110" height="80"/>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.5568627451" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Kdy-jg-rnA"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="23"/>
                                 <state key="normal" title="New Game">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -77,17 +79,24 @@
                                     <action selector="didTapNewGameButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="eDv-8U-z3c"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="1ha-3G-Vmd">
-                                <rect key="frame" x="189" y="658" width="37" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="1ha-3G-Vmd">
+                                <rect key="frame" x="187" y="656" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="pmE-I7-0xH"/>
+                                    <constraint firstAttribute="width" constant="40" id="scv-ST-SlD"/>
+                                </constraints>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.35686274509803922" green="0.41960784313725491" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="1ha-3G-Vmd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1u7-gf-1fo"/>
                             <constraint firstItem="jil-8c-yc3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9LW-f4-Rps"/>
+                            <constraint firstItem="1ha-3G-Vmd" firstAttribute="centerY" secondItem="3R4-75-ush" secondAttribute="centerY" id="I1d-WD-0w7"/>
                             <constraint firstItem="pzf-Dv-aKa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="M3T-xI-xv0"/>
                             <constraint firstItem="jil-8c-yc3" firstAttribute="top" secondItem="pzf-Dv-aKa" secondAttribute="bottom" constant="20" id="UKi-DF-Cha"/>
                             <constraint firstItem="pzf-Dv-aKa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VQP-Vc-3Ux"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3R4-75-ush" secondAttribute="bottom" constant="20" id="iEi-t0-KTT"/>
+                            <constraint firstItem="3R4-75-ush" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lHW-UV-9aj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jil-8c-yc3" secondAttribute="trailing" constant="16" id="slv-x6-hvJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
