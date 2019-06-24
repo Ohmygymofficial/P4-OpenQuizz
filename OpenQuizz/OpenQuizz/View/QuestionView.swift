@@ -9,10 +9,6 @@
 import UIKit
 
 class QuestionView: UIView {
-
-    @IBOutlet private var label: UILabel!
-    @IBOutlet private var icon: UIImageView!
-    
     
     enum Style {
         case correct, incorrect, standard
@@ -23,28 +19,29 @@ class QuestionView: UIView {
             setStyle(style)
         }
     }
+    
     private func setStyle(_ style: Style) {
         switch style {
         case .correct:
-            backgroundColor = UIColor(red: 200/255.0, green: 236/255.0, blue: 160/255.0, alpha: 1)
-            icon.image = UIImage(named: "Icon Correct")
-            isHidden = false
+            backgroundColor = UIColor(red: 200.0/255.0, green: 236.0/255.0, blue: 160.0/255.0, alpha: 1)
+            icon.image = #imageLiteral(resourceName: "Icon Correct")
+            icon.isHidden = false
         case .incorrect:
-            backgroundColor = #colorLiteral(red: 0.374232173, green: 0.8378459215, blue: 0, alpha: 1)
-            icon.image = UIImage(named: "Icon Error")
-            isHidden = false
+            backgroundColor = UIColor(red: 243.0/255.0, green: 135.0/255.0, blue: 148.0/255.0, alpha: 1)
+            icon.image = #imageLiteral(resourceName: "Icon Error")
+            icon.isHidden = false
         case .standard:
-            backgroundColor = #colorLiteral(red: 0.7215686275, green: 0.737254902, blue: 0.7529411765, alpha: 1)
-            isHidden = true
+            backgroundColor = UIColor(red: 191.0/255.0, green: 196.0/255.0, blue: 201.0/255.0, alpha: 1)
+            icon.isHidden = true
         }
     }
     
     var title = "" {
         didSet {
-            // corps de notre fonction
             label.text = title
         }
     }
     
-    
+    @IBOutlet private var label: UILabel!
+    @IBOutlet private var icon: UIImageView!
 }

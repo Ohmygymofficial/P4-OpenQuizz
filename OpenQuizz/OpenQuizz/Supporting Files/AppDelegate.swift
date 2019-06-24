@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  OpenQuizz
 //
-//  Created by E&M Life Project on 13/06/2019.
-//  Copyright © 2019 Erwan PASTE. All rights reserved.
+//  Created by Ambroise COLLON on 15/06/2017.
+//  Copyright © 2017 OpenClassrooms. All rights reserved.
 //
 
 import UIKit

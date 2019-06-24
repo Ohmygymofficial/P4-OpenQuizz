@@ -103,9 +103,9 @@
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="1ha-3G-Vmd" id="MH3-dW-zTi"/>
-                        <outlet property="labelScore" destination="jil-8c-yc3" id="Izu-zD-o7X"/>
                         <outlet property="newGameButton" destination="3R4-75-ush" id="Uck-J9-8v2"/>
                         <outlet property="questionView" destination="pzf-Dv-aKa" id="0YS-9R-n3M"/>
+                        <outlet property="scoreLabel" destination="jil-8c-yc3" id="obp-zU-xr3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
